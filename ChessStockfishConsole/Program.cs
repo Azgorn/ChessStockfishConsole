@@ -2,7 +2,7 @@
 using Stockfish.NET.Models;
 using System;
 
-namespace ChessStockfishConsole // Note: actual namespace depends on the project name.
+namespace ChessStockfishConsole
 {
     internal class Program
     {
@@ -27,7 +27,7 @@ namespace ChessStockfishConsole // Note: actual namespace depends on the project
             string[] moves = new string[401];
             //moves[0] = "e2e4";
             //moves[1] = "c7c6";
-            while (n < 400)
+            while (n < 200)
             {
                 string previousMove = stockfish.GetBestMoveTime(1000);
                 moves[n] = previousMove;
